@@ -10,6 +10,7 @@ ionice --class 3     --pid $$ > /dev/null
 
 umask 0077
 
+START=$(pwd)
 cd /mnt/space/git
 
 DIRS=$(find . -name \*.git | LANG=C sort | cut -b3-)
@@ -21,5 +22,5 @@ for d in $DIRS; do
 	echo $d
 	git --no-pager log --format="%cd	${d%.git}	%h	%s" --date=iso
 	popd > /dev/null
-done | sort -nr | head -100 > list.txt
+done | sort -nr | head -100 > "$START/list.txt"
 
