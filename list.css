@@ -1,0 +1,52 @@
+h1 {
+	font-size: 130%;
+}
+
+h2 {
+	font-size: 110%;
+}
+
+h3 {
+	font-size: 110%;
+	padding-left: 2em;
+}
+
+div.l {
+	clear: left;
+	width: 100%;
+}
+
+div.l:hover {
+	background: #ffa;
+}
+
+div {
+	float: left;
+}
+
+div.d {
+	width: 7em;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+div.t {
+	margin-right: 1em;
+}
+
+div.r {
+	width: 17em;
+	font-weight: bold;
+	font-size: 110%;
+}
+
+div.h {
+	font-family: monospace;
+	color: #aaa;
+	width: 5em;
+}
+
+div.m {
+	font-weight: bold;
+}
+
