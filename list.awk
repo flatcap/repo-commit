@@ -40,13 +40,17 @@ BEGIN {
 
 	if (repo != oldrepo) {
 		oldrepo = repo;
-		printf ("\t\t<div class=\"r\">%s</div>\n", repo);
+		link = "<a href=\"https://russon.org/cgit/" repo "\">" repo "</a>";
+
+		printf ("\t\t<div class=\"r\">%s</div>\n", link);
 	} else {
 		printf ("\t\t<div class=\"r\">&nbsp;&nbsp;\"</div>\n", date);
 	}
 
-	printf ("\t\t<div class=\"h\">%s</div>\n", hash);
-	printf ("\t\t<div class=\"m\">&ldquo;%s&rdquo;</div>\n", msg);
+	link = "https://russon.org/cgit/" repo "/commit/?id=" hash;
+
+	printf ("\t\t<div class=\"h\"><a href=\"%s\">%s<a/></div>\n", link, hash);
+	printf ("\t\t<div class=\"m\"><a href=\"%s\">&ldquo;%s&rdquo;</a></div>\n", link, msg);
 	printf ("\t</div>\n");
 }
 

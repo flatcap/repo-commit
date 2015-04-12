@@ -1,14 +1,9 @@
+a {
+	text-decoration: none;
+	color: blue;
+}
 h1 {
 	font-size: 130%;
-}
-
-h2 {
-	font-size: 110%;
-}
-
-h3 {
-	font-size: 110%;
-	padding-left: 2em;
 }
 
 div.l {
@@ -41,12 +36,16 @@ div.r {
 }
 
 div.h {
-	font-family: monospace;
-	color: #aaa;
-	width: 5em;
+	width: 4em;
 }
 
-div.m {
+div.h a {
+	font-family: monospace;
+	color: #88f;
+}
+
+div.m a {
 	font-weight: bold;
+	color: #000;
 }
 
